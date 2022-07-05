@@ -63,5 +63,5 @@ export const AdminLayoutRoutes: Routes = [
   { path: "notifications", component: NotificationsComponent },
   { path: "upgrade", component: UpgradeComponent },
   { path: "agenda", component: AgendaComponent },
-  { path: "clientes", component: ClienteComponent },
+  { path: "clientes", loadChildren: () => import('../../cliente/cliente.module').then(m=>m.ClienteModule) },
 ];

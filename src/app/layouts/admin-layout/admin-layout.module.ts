@@ -20,7 +20,6 @@ import {MatSelectModule} from '@angular/material/select';
 import { AgendaComponent } from 'app/agenda/agenda.component';
 import timeGridPlugin from '@fullcalendar/timegrid';
 // import { BrowserModule } from '@angular/platform-browser';
-import { ClienteComponent } from 'app/cliente/cliente.component';
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
@@ -55,8 +54,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-    AgendaComponent,
-    ClienteComponent
+    AgendaComponent
   ]
 })
 
