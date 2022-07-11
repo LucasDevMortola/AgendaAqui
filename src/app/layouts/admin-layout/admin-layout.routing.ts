@@ -44,7 +44,7 @@ export const AdminLayoutRoutes: Routes = [
   // }, {
   //     path: '',
   //     children: [ {
-  //         path: 'typography',
+  //         path: 'typography', 
   //         component: TypographyComponent
   //     }]
   // }, {
@@ -55,7 +55,7 @@ export const AdminLayoutRoutes: Routes = [
   //     }]
   // }
   { path: "dashboard", component: DashboardComponent },
-  { path: "user-profile", component: UserProfileComponent },
+  { path: "profissionais", loadChildren:() => import('../../profisisonais/profisisonais.module').then(m=>m.ProfisisonaisModule)},
   { path: "table-list", component: TableListComponent },
   { path: "typography", component: TypographyComponent },
   { path: "icons", component: IconsComponent },

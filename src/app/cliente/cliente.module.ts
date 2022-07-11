@@ -31,6 +31,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule,
     MatSelectModule,
     MatTooltipModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
     MatRippleModule,
     MatInputModule,
     MatButtonModule
