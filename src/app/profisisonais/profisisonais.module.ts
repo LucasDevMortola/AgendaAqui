@@ -8,6 +8,14 @@ import { NovoProfissionalComponent } from './novo-profissional/novo-profissional
 
 import { RouterModule } from '@angular/router';
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatRippleModule} from '@angular/material/core';
+
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +26,13 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ProfisisonaisRoutingModule,
-    RouterModule
+    RouterModule,
+    MatButtonModule,
+    MatInputModule,
+    MatRippleModule,
+    MatTooltipModule,
+    MatSelectModule,
+    MatFormFieldModule
   ]
 })
 export class ProfisisonaisModule { }
